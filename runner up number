@@ -1,0 +1,8 @@
+n = int(input())
+arr = map(int, input().split())
+arrset = set(arr)
+runnerup = 0
+for index, val in enumerate(sorted(arrset), start=1):
+    if index == len(arrset) - 1:
+        runnerup = val
+print(runnerup)
